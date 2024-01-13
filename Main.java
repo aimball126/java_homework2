@@ -9,7 +9,7 @@ public static void main(String[] args) {
     int studentId = 1001;
     Constants.Semester firstSemester = Constants.Semester.Spring;
     int firstYear = 2024;
-    Constants.StudentType type = Constants.StudentType.FULL_TIME;
+    Constants.StudentType type = Constants.StudentType.phD;
 
     // Call the Student constructor to create a new Student object
     Student student = new Student(nid, name, date, studentId, firstSemester, firstYear, type);
@@ -17,7 +17,16 @@ public static void main(String[] args) {
     // You can now use the student object to access its properties and methods
     System.out.println("Student name: " + student.getName());
     System.out.println("Student ID: " + student.getID());
+
+    student.setID(9999);
+    student.setName("Aimen MILADI");
     // ... other operations with the student object
+
+    Group group = new Group(); 
+    group.enrolledStudent(student);
+
+    group.printEnrolledStudents();
+
 }
 
 }

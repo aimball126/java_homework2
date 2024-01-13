@@ -12,4 +12,8 @@ public class EnrolledStudent {
   public EnrolledStudent(Student stud) {
     this.stud = stud;
   }
+
+  public Student getEnrolledStudent(){
+    return this.stud;
+  }
 }

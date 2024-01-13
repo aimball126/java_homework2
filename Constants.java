@@ -9,7 +9,7 @@ public class Constants {
   public enum StudentType {
     UnderGrade,
     Master,
-    phD, FULL_TIME,
+    phD,
   }
 
   public enum Degree {
